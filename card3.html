@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* Style the container */
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: #8bc6ec;
+      background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 60%;
+      height: 70%;
+      background-color: white;
+      display: flex;
+    }
+
+    /* Style Left Box */
+    .leftbox{
+        background-color: rgba(34, 2, 45, 0.875);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+    }
+
+    /* Style the Audience div */
+     .Audience{
+        display: flex;
+        gap: 5.2em;
+        justify-content: space-around;
+    }
+
+    /* Styling Right Box */
+    .rightbox {
+      width: 1000px;
+      height: 100%;
+      background-image: url("https://ars.els-cdn.com/content/image/X26669544.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="leftbox">
+          <div class="heading">
+            <h2>Get Insight that help your business grow</h2>
+          </div>
+
+          <div class="para">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, officiis recusandae temporibus ullam ipsam
+              excepturi sit! Quam eligendi accusamus doloremque?
+            </p>
+          </div>
+
+          <div class="Audience">
+            <span>
+                <p>10K+</p>
+                <p>Comments</p>
+            </span>
+
+            <span>
+                <p>214</p>
+                <p>Paid Users</p>
+            </span>
+
+            <span>
+                <p>12M+</p>
+                <p>Views</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="rightbox"></div>
+      </div>
+    </div>
+  </body>
+</html>
