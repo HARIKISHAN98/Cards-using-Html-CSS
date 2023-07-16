@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 25%;
+            height: 65%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            gap: 10px;
+        }
+        
+
+        .head-img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /* border-radius: 10px 10px 0px 0px; */
+            width: 100%;
+            height: 100px;
+        }
+
+        .text-para{
+            padding: 10px;
+            text-align:center;
+        }
+
+        .div-tag{
+            width: 90%;
+            background-color: slategray;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .amount{
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            padding-left: 5px;
+        }
+
+        .amount i{
+            align-self: center;
+            background: rgb(173, 197, 222);
+            border-radius: 50%;
+            width: 1.3em;
+        }
+
+        .div-tag .Anchar{
+            align-self: center;
+            margin-right: 10px;
+        }
+
+        .payment-btn{
+            width: 90%;
+            background-color: rgb(10, 10, 56);
+            color: white;
+            border-radius: 10px;
+            padding: 0.3em;
+            font-size: 1.1em;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .cancel-order{
+            text-decoration: none;
+            color: black;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+
+             
+            <img src="https://images.moneycontrol.com/static-mcnews/2021/12/UPI-1.jpg?impolicy=website&width=770&height=431" class="head-img" alt="img">
+
+            <h2>Order Summary</h2>
+
+            <p class="text-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias,
+               assumenda! Option laboriosam consequatur dolorem inventore.</p>
+
+             <div class="div-tag">
+                <div class="amount">
+                    <i class="fa-solid fa-music"></i>
+                    <span>
+                        <p>Annual plan</p>
+                        <p>$99.9/year</p>
+                    </span>
+                </div>
+                <div class="Anchar">
+                    <a href="#">Change</a>
+                </div>
+             </div>
+
+             
+            <button class="payment-btn">Proceed to Payment</button>
+
+            <a href="#" class="cancel-order">Cancel Order</a>
+            
+        </div>
+    </div>
+</body>
+</html>
